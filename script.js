@@ -10,7 +10,7 @@ const products = [
 
     {name:"Graphice Card", price:"Price: 20000Rs", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQLtcQTFDu4-LM6a-P6BHkeHjj-xGxxcnaw&s", description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim, id incidunt possimus consectetur cumque laboriosam quae ducimus esse dolorum pariatur, earum ipsam. Velit nulla atque error sequi ex perspiciatis!"},
 
-    {name:"Gaming Moniter", price:"Price: 28000Rs", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAJpErO8qcpbg41bfowa9KP4FJBJLsWefZw&s", description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim, id incidunt possimus consectetur cumque laboriosam quae ducimus esse dolorum pariatur, earum ipsam. Velit nulla atque error sequi ex perspiciatis!"},
+    {name:"Gaming Monitor", price:"Price: 28000Rs", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAJpErO8qcpbg41bfowa9KP4FJBJLsWefZw&s", description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim, id incidunt possimus consectetur cumque laboriosam quae ducimus esse dolorum pariatur, earum ipsam. Velit nulla atque error sequi ex perspiciatis!"},
 
     {name:"Gaming Keybord", price:"Price: 8000Rs", img:"https://www.cultofmac.com/wp-content/uploads/2024/06/NZXT-Function-mechanical-gaming-keyboard-1536x1536.jpg", description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim, id incidunt possimus consectetur cumque laboriosam quae ducimus esse dolorum pariatur, earum ipsam. Velit nulla atque error sequi ex perspiciatis!"},
 
@@ -35,6 +35,10 @@ for(let i = 0; i < products.length; i++) {
         descriptionElement.textContent = products[i].description;
     }
 }
+
+
+
+
 
 
 

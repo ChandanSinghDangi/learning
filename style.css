@@ -3,8 +3,126 @@
     padding: 0;
 }
 
-.main {
+/* Mobile First approach */
+/* By default for mobile */
 
+.main {
+    background-color: #ffffff;
+    padding:1rem;
+}
+
+.container{
+    background-color: #d6d6d6;
+    padding:1.5rem;
+    border-radius: .5rem;
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(1, 0.8fr);
+    justify-content: center;
+}
+
+.product {
+    background-color: #cbbbcf;
+    border-radius: 0.5rem;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #cbbbcf; 
+}
+
+.product img {
+    width: 100%; 
+    border-radius: 0.9rem;  
+}
+
+.box {
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.box p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;  
+}
+
+
+
+/* Grid / Flex Gap is better */
+/* This is for Tablets or mid size devices */
+@media (min-width:687px){   
+
+    .container {
+        grid-template-columns: repeat(2, 0.4fr);
+        justify-content: space-around;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+/* This is for large size screens or devices */
+@media (min-width:1024px) {
+
+    .container {
+        grid-template-columns: repeat(3, 0.25fr);
+        justify-content:space-around;
+
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.main {
+    border: 2px solid red;
     background-color: #ffffff;
     background: linear-gradient(45deg, #f0f0f0, #ffffff);
     padding: 4rem 3rem;
@@ -12,12 +130,15 @@
 }
 
 .container {
+    border: 2px solid black;
     background-color: #d6d6d6;
     border-radius: 2%;
     border: 1px solid #ddd;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 0px;
+    min-height: auto;
+    
     
 }
 
@@ -28,7 +149,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border-radius: 10px;  
     width: 15rem;
-    /* max-height: auto; */
     margin: 25px auto;
     display: flex;
     flex-direction: column;
@@ -38,7 +158,6 @@
 }
 
 .product:hover {
-
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     background-color: #f9f9f9; 
@@ -55,16 +174,17 @@
     
     .main {
         padding: 3rem 1rem;
-        /* min-height: 100%; */
+        
     }
     .container {
         grid-template-columns: 1fr;
         border-radius: 20px;
         min-height: 100%;
-        /* width: 100%; */
+       
         
     }.product {
-        margin-top: 4rem;
+        gap: 20px 0px;
+       
         width: 60%;
         height: 100%;
     }
@@ -102,9 +222,7 @@
     }
 }
 
-
-
-
+*/
 
 
 
